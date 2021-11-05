@@ -51,7 +51,7 @@ public class Board {
         for (int row = 0; row < matrix.length; row++) {
             oVertiCounter = 0;
             for (int col = 0; col < matrix.length; col++) {
-                if (matrix[col][row] == 'O') { //i want to make the row and col equal to X
+                if (matrix[col][row] == 'O') {
                     oVertiCounter++;
                     if (oVertiCounter == 3) {
                         return true;
