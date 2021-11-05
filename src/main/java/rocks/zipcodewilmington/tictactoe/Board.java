@@ -13,6 +13,7 @@ public class Board {
 //        Character[][] board = this.matrix;
         int xVertCounter = 0;
         int xHoriCounter = 0;
+        //check vertical cases
         for (int row = 0; row < matrix.length; row++) {
             xVertCounter = 0;
             for (int col = 0; col < matrix.length; col++) {
@@ -24,6 +25,7 @@ public class Board {
                 }
             }
         }
+        //check horizontal cases
         for (int row = 0; row < matrix.length; row++) {
             xHoriCounter = 0;
             for (int col = 0; col < matrix.length; col++) {
@@ -35,6 +37,7 @@ public class Board {
                 }
             }
         }
+        //checking diagonal cases
         if (matrix[0][0] == 'X' && matrix[1][1] == 'X' && matrix[2][2] == 'X'
             || matrix[0][2] == 'X' && matrix[1][1] == 'X' && matrix[2][0] == 'X') {
             return true;
